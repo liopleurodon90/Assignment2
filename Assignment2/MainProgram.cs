@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace Assignment2
 {
-    class Program
+    class MainProgram
     {
         static void Main(string[] args)
         {
-        }
-    }
-}
+        }//main
+    }//mainprogram
+
+    public class Menu
+    {
+
+    }//class menu
+}//namespace
