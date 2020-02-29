@@ -10,10 +10,10 @@ namespace Assignment2
     {
         static void Main(string[] args)
         {
-            Menu menu = new Menu();
-            menu.Start();
+            //Menu menu = new Menu();
+           // menu.Start();
         }//main
     }//mainprogram
 
-    
+
 }//namespace
