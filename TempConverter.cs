@@ -25,4 +25,17 @@ public class TemperatureConverter
 			while (choice != 0); //while
 
 	}//start
+
+	public void DisplayMenu()
+    {
+			Console.WriteLine("************************************************************");
+			Console.WriteLine("MENU");
+			Console.WriteLine("************************************************************");
+			Console.WriteLine("Convert Farenheit to Celcius: 1);
+			Console.WriteLine("Convert Celcius to Farenheit: 2);
+			Console.WriteLine("Exit the converter and return to main menu: 0");
+			Console.WriteLine("************************************************************");
+			Console.WriteLine("Your selection: ");
+		}//displaymenu
+
 }//class tempconverter
