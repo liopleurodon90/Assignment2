@@ -13,8 +13,5 @@ namespace Assignment2
         }//main
     }//mainprogram
 
-    public class Menu
-    {
-
-    }//class menu
+    
 }//namespace
