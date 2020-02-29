@@ -13,7 +13,9 @@ public class Menu()
 			{
 			case 1:  //menu item 1
 				{
-
+				WholeNumbersForAdd sumObj = new WholeNumbersForAdd(); //declare a local reference variable and create an instance of it
+				sumObj.Start(); //call its start method
+				break;
 				}//case 1
 			}//switch
 		 }//while loop 
