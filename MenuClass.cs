@@ -1,6 +1,8 @@
 ﻿using System;
 
-public class Menu
+namespace Assignment2
+{
+    public class Menu
 {
     public void Start
     {
@@ -24,4 +26,4 @@ public class Menu
 
 	}//start
 }//class menu
-
+}//namespace

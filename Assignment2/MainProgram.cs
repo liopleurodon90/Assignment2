@@ -10,8 +10,10 @@ namespace Assignment2
     {
         static void Main(string[] args)
         {
-            //Menu menu = new Menu();
-           // menu.Start();
+            //call an object of class TemperatureConverter
+           // start
+           //how do choices work
+
         }//main
     }//mainprogram
 
