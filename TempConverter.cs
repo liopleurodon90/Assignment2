@@ -1,8 +1,15 @@
 ﻿using System;
 
 namespace Assignment2
-{ 
-    public class TempCon
+{
+    public class Input
+    {
+        Input inputObj = new Input();
+        inputObj.Start();
+    }//input
+
+    public class TempCon 
+    
 {
     public void Start()
     {
@@ -39,11 +46,14 @@ namespace Assignment2
         Console.WriteLine("Convert Celcius to Farenheit: 2");
         Console.WriteLine("Exit the converter: 0");
         Console.WriteLine("************************************************************");
-        Console.ReadLine();
+        Console.WriteLine("Please select: ")
+    
+
         string choiceSt = Console.ReadLine();
-        choice = int.Parse(choiceSt);    //parse from string to int
-        Console.WriteLine("Your selection: "+ choice +" ");
-        choice = Console.ReadLine();
+        //int choice = Convert.ToInt16(choiceSt);
+        //int choice = int.Parse(choiceSt);    //parse from string to int
+        Console.WriteLine("Your selection: "+ choiceSt +" ");
+        
             //send people to the appropriate page
     }//displaymenu
 
