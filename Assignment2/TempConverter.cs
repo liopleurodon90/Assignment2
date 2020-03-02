@@ -1,12 +1,20 @@
-﻿using System;
+﻿using System.Text;
+using System.Threading.Tasks;
+using System;
 
 namespace Assignment2
-{ 
-    public class TempCon
+{
+    public class Input
+    {
+        Input inputObj = new Input();
+    }//input
+
+    public class TempCon 
+    
 {
     public void Start()
     {
-        int choice = 0;
+        int choice = -1;
         do
         {
             DisplayMenu();
@@ -39,19 +47,33 @@ namespace Assignment2
         Console.WriteLine("Convert Celcius to Farenheit: 2");
         Console.WriteLine("Exit the converter: 0");
         Console.WriteLine("************************************************************");
-        Console.ReadLine();
+        Console.WriteLine("Please select: ");
+
+
+
         string choiceSt = Console.ReadLine();
-        int choice = int.Parse(choiceSt);    //parse from string to int
-        Console.WriteLine("Your selection: "+ choice +" ");
-        choice = Console.ReadLine();
+        //int choice = Convert.ToInt16(choiceSt);
+        //int choice = int.Parse(choiceSt);    //parse from string to int
+        Console.WriteLine("Your selection: "+ choiceSt +" ");
+        
             //send people to the appropriate page
     }//displaymenu
 
-//method farenheit to celcius
-//method celcius to farenheit
-//display for each
-//maybe these are classes
-//maybe the display goes in main
+    public void CalculateFarenheitToCelcius()
+        {
+            Console.WriteLine("Convert Farenheit to Celcius");
+        }//f to c
+
+    public void CalculateCelciusToFarenheit()
+        {
+            Console.WriteLine("Convert Celcius to Farenheit");
+        } //c to f
+
+        //method farenheit to celcius
+        //method celcius to farenheit
+        //display for each
+        //maybe these are classes
+        //maybe the display goes in main
 
     }//class tempconverter
 }//namespace
