@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//CS File Include=C:\Users\leoes\source\repos\Assignment2\TempConverter.cs
 
 namespace Assignment2
 {
@@ -10,8 +11,8 @@ namespace Assignment2
     {
         static void Main(string[] args)
         {
-            TempCon tempcObj = new TempCon; //call an object of class TemperatureConverter
-           
+            TempCon tempcObj = new TempCon(); //call an object of class TemperatureConverter
+            tempcObj.Start();
            //how do choices work: if choice==1 run method?
 
         }//main
