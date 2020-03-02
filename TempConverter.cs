@@ -39,9 +39,10 @@ namespace Assignment2
         Console.WriteLine("Convert Celcius to Farenheit: 2");
         Console.WriteLine("Exit the converter: 0");
         Console.WriteLine("************************************************************");
-        choice = Console.ReadLine();
-            //add a line to parse from string to int
-        Console.WriteLine("Your selection: +choice+ ");
+        Console.ReadLine();
+            string choiceSt = Console.ReadLine();
+        int choice = Convert.ToInt16(choiceSt);    //parse from string to int
+        Console.WriteLine("Your selection: + choice + ");
         choice = Console.ReadLine();
             //send people to the appropriate page
     }//displaymenu
