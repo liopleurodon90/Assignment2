@@ -10,9 +10,9 @@ namespace Assignment2
     {
         static void Main(string[] args)
         {
-            //call an object of class TemperatureConverter
-           // start
-           //how do choices work
+            TempCon tempcObj = new TempCon; //call an object of class TemperatureConverter
+           
+           //how do choices work: if choice==1 run method?
 
         }//main
     }//mainprogram
