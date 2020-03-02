@@ -41,17 +41,27 @@ namespace Assignment2
         Console.WriteLine("************************************************************");
         Console.ReadLine();
         string choiceSt = Console.ReadLine();
-        int choice = Convert.ToInt16(choiceSt);    //parse from string to int
-        Console.WriteLine("Your selection: + choice + ");
+        choice = int.Parse(choiceSt);    //parse from string to int
+        Console.WriteLine("Your selection: "+ choice +" ");
         choice = Console.ReadLine();
             //send people to the appropriate page
     }//displaymenu
 
-//method farenheit to celcius
-//method celcius to farenheit
-//display for each
-//maybe these are classes
-//maybe the display goes in main
+    public void CalculateFarenheitToCelcius()
+        {
+            Console.WriteLine("Convert Farenheit to Celcius");
+        }//f to c
+
+    public void CalculateCelciusToFarenheit()
+        {
+            Console.WriteLine("Convert Celcius to Farenheit");
+        } //c to f
+
+        //method farenheit to celcius
+        //method celcius to farenheit
+        //display for each
+        //maybe these are classes
+        //maybe the display goes in main
 
     }//class tempconverter
 }//namespace
