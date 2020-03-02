@@ -1,70 +1,68 @@
 ﻿using System.Text;
 using System.Threading.Tasks;
 using System;
+using InputProgram;
 
 namespace Assignment2
 {
-    public class Input
-    {
-        Input inputObj = new Input();
-    }//input
+   
 
-    public class TempCon 
-    
-{
-    public void Start()
+    public class TempCon
+
     {
-        int choice = -1;
-        do
+        public void Start()
         {
-            DisplayMenu();
-            choice = Input.ReadIntegerConsole("Your choice:  ");
-            switch (choice)
+            int choice = -1;
+            do
             {
-                case 1:
-                    CalculateFarenheitToCelcius();
-                    break;
-                case 2:
-                    CalculateCelciusToFarenheit();
-                    break;
-                case 0: //exits loop, return to menu
-                    break;
-                default:
-                    Console.WriteLine("Error: invalid option. Please select 1, 2, or 0.");
-                    break;
-            }//switch
-        }//do
-        while (choice != 0); //while
+                DisplayMenu();
+                choice = Input.ReadIntegerConsole("Your choice:  ");
+                switch (choice)
+                {
+                    case 1:
+                        CalculateFarenheitToCelcius();
+                        break;
+                    case 2:
+                        CalculateCelciusToFarenheit();
+                        break;
+                    case 0: //exits loop, return to menu
+                        break;
+                    default:
+                        Console.WriteLine("Error: invalid option. Please select 1, 2, or 0.");
+                        break;
+                }//switch
+            }//do
+            while (choice != 0); //while
 
-    }//start
+        }//start
 
-    public void DisplayMenu()
-    {
-        Console.WriteLine("************************************************************");
-        Console.WriteLine("MAIN MENU");
-        Console.WriteLine("************************************************************");
-        Console.WriteLine("Convert Farenheit to Celcius: 1");
-        Console.WriteLine("Convert Celcius to Farenheit: 2");
-        Console.WriteLine("Exit the converter: 0");
-        Console.WriteLine("************************************************************");
-        Console.WriteLine("Please select: ");
+        public void DisplayMenu()
+        {
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("MAIN MENU");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("Convert Farenheit to Celcius: 1");
+            Console.WriteLine("Convert Celcius to Farenheit: 2");
+            Console.WriteLine("Exit the converter: 0");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("Please select: ");
 
 
 
-        string choiceSt = Console.ReadLine();
-        //int choice = Convert.ToInt16(choiceSt);
-        //int choice = int.Parse(choiceSt);    //parse from string to int
-        Console.WriteLine("Your selection: "+ choiceSt +" ");
-        
+            string choiceSt = Console.ReadLine();
+            //int choice = Convert.ToInt16(choiceSt);
+            //int choice = int.Parse(choiceSt);    //parse from string to int
+            Console.WriteLine("Your selection: " + choiceSt + " ");
+
             //send people to the appropriate page
-    }//displaymenu
+        }//displaymenu
 
-    public void CalculateFarenheitToCelcius()
+        public void CalculateFarenheitToCelcius()
         {
             Console.WriteLine("Convert Farenheit to Celcius");
         }//f to c
 
-    public void CalculateCelciusToFarenheit()
+        public void CalculateCelciusToFarenheit()
         {
             Console.WriteLine("Convert Celcius to Farenheit");
         } //c to f
@@ -76,4 +74,5 @@ namespace Assignment2
         //maybe the display goes in main
 
     }//class tempconverter
+
 }//namespace
