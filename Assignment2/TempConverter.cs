@@ -41,8 +41,8 @@ namespace Assignment2
         Console.WriteLine("************************************************************");
         Console.ReadLine();
         string choiceSt = Console.ReadLine();
-        int choice = Convert.ToInt16(choiceSt);    //parse from string to int
-        Console.WriteLine("Your selection: + choice + ");
+        int choice = int.Parse(choiceSt);    //parse from string to int
+        Console.WriteLine("Your selection: "+ choice +" ");
         choice = Console.ReadLine();
             //send people to the appropriate page
     }//displaymenu
