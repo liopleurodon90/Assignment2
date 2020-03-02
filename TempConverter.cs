@@ -5,7 +5,7 @@ namespace Assignment2
     public class Input
     {
         Input inputObj = new Input();
-        inputObj.Start();
+        //inputObj.Start();
     }//input
 
     public class TempCon 
@@ -46,8 +46,9 @@ namespace Assignment2
         Console.WriteLine("Convert Celcius to Farenheit: 2");
         Console.WriteLine("Exit the converter: 0");
         Console.WriteLine("************************************************************");
-        Console.WriteLine("Please select: ")
-    
+        Console.WriteLine("Please select: ");
+
+
 
         string choiceSt = Console.ReadLine();
         //int choice = Convert.ToInt16(choiceSt);

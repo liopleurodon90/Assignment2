@@ -11,6 +11,9 @@ namespace Assignment2
     {
         static void Main(string[] args)
         {
+            Input inputObj = new Input();
+            inputObj.Start();
+
             TempCon tempcObj = new TempCon(); //call an object of class TemperatureConverter
             tempcObj.Start();
            //how do choices work: if choice==1 run method?
