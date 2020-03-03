@@ -71,9 +71,10 @@ namespace Assignment2
 
             Console.WriteLine("Convert Celcius to Farenheit");
 
-            for (int i = 0, i<= 100, i += 5); //i between 0 and 100, increase in increments of 5
-                {
-                convertedValue = CelciusToFarenheit(int);
+            for (int i = 0; i<= 100; i += 5)  //i between 0 and 100, increase in increments of 5
+            
+            {
+                convertedValue = CelciusToFarenheit(i);
                 
                 textOut = string.Format("{0.16:f2}C = {1.6:f2} F", i, convertedValue);
 
