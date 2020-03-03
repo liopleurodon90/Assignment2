@@ -45,14 +45,14 @@ namespace Assignment2
             Console.WriteLine("Convert Celcius to Farenheit: 2");
             Console.WriteLine("Exit the converter: 0");
             Console.WriteLine("************************************************************");
-            Console.WriteLine("Please select: ");
+            //Console.WriteLine("Please select: ");
 
 
 
             string choiceSt = Console.ReadLine();
             //int choice = Convert.ToInt16(choiceSt);
             //int choice = int.Parse(choiceSt);    //parse from string to int
-            Console.WriteLine("Your selection: " + choiceSt + " "); //inform user 
+            //Console.WriteLine("Your selection: " + choiceSt + " "); //inform user 
 
             //send people to the appropriate page
         }//displaymenu
@@ -72,13 +72,13 @@ namespace Assignment2
             {
                 convertedValue = CelciusToFarenheit(i);
 
-                textOut = string.Format("{0, 16:f2}C = {1, 6:f2} F", i, convertedValue); //"{0.16:f2}C = {1.6:f2} F"
+                textOut = string.Format("{0, 16:f2}C = {1, 6:f2} F", i, convertedValue); 
 
                 Console.WriteLine(textOut);
 
                 }//for
             Console.WriteLine(textOut);
-            Console.WriteLine( );
+            Console.WriteLine("************************************************************");
         } //c to f
 
         public void CalculateFarenheitToCelcius()
@@ -89,12 +89,12 @@ namespace Assignment2
 
             Console.WriteLine("Converting Farenheit to Celcius");
 
-            for (int i = 0; i <= 100; i += 5)  //i between 0 and 100, increase in increments of 5
+            for (int j = 0; j <= 212; j += 5)  //i between 0 and 212, increase in increments of 5
 
             {
-                convertedValue = CelciusToFarenheit(i);
+                convertedValue = FarenheitToCelcius(j);
 
-                textOut = string.Format("{0, 16:f2}C = {1, 6:f2} F", i, convertedValue); //"{0.16:f2}C = {1.6:f2} F"
+                textOut = string.Format("{0,16:f2}C = {1,6:f2} F", j, convertedValue); //"{0.16:f2}C = {1.6:f2} F"
 
                 Console.WriteLine(textOut);
 
@@ -115,11 +115,7 @@ namespace Assignment2
            return celcius;
         }//double c to f
 
-        //method farenheit to celcius
-        //method celcius to farenheit
-        //display for each
-        //they're defeintely methods
-        //maybe the display goes in main
+        
 
     }//class tempconverter
 
