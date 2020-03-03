@@ -12,12 +12,12 @@ namespace Assignment2
     {
         public void Start()
         {
-            int choice = -1;
+            int choice = -1; //because we don't know and it's not one of the options
             do
             {
                 DisplayMenu();
-                choice = Input.ReadIntegerConsole("Confirm your choice:  ");
-                switch (choice)
+                choice = Input.ReadIntegerConsole("Your choice:  "); //this one actually does something
+                switch (choice) //in each case use choice
                 {
                     case 1:
                         CalculateFarenheitToCelcius();
@@ -32,7 +32,7 @@ namespace Assignment2
                         break;
                 }//switch
             }//do
-            while (choice != 0); //while
+            while (choice != 0); //while. remains active as long as choice is not zero
 
         }//start
 
@@ -45,16 +45,16 @@ namespace Assignment2
             Console.WriteLine("Convert Celcius to Farenheit: 2");
             Console.WriteLine("Exit the converter: 0");
             Console.WriteLine("************************************************************");
-            Console.WriteLine("Please select: ");
+            
 
 
 
-            string choiceSt = Console.ReadLine();
+            //string choiceSt = Console.ReadLine();
             //int choice = Convert.ToInt16(choiceSt);
             //int choice = int.Parse(choiceSt);    //parse from string to int
             //Console.WriteLine("Your selection: " + choiceSt + " "); //inform user 
 
-            //send people to the appropriate page
+          
         }//displaymenu
 
         
