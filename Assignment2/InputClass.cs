@@ -42,7 +42,7 @@ namespace InputProgram
                 goodNumber = int.TryParse(Console.ReadLine(), out convertedValue);
 
                 if (!goodNumber)  //same as (goodNumber == false)
-                    Console.WriteLine("Input must be an integer. Try again.");
+                    Console.WriteLine("Error: Input must be an integer. Try again.");
 
                 //If conversion was not succesful, continue with the loop
             } while (!goodNumber);  //means: while (done == false)

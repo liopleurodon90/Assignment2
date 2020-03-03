@@ -104,13 +104,13 @@ namespace Assignment2
             Console.WriteLine("************************************************************");
         } //f to c
 
-    public double CelciusToFarenheit(double celcius)
+    private double CelciusToFarenheit(double celcius)
         {
             double farenheit =(9.0/5.0)*celcius+32.0;
             return farenheit;
         }//double c to f
 
-    public double FarenheitToCelcius(double farenheit)
+    private double FarenheitToCelcius(double farenheit)
         {
            double celcius = (5.0/9.0) * (farenheit - 32.0);
            return celcius;
