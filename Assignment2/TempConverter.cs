@@ -89,12 +89,12 @@ namespace Assignment2
 
             Console.WriteLine("Converting Farenheit to Celcius");
 
-            for (int j = 0; j <= 212; j += 5)  //i between 0 and 212, increase in increments of 5
+            for (int j = 0; j <= 212; j += 5)  //j between 0 and 212, increase in increments of 5
 
             {
                 convertedValue = FarenheitToCelcius(j);
 
-                textOut = string.Format("{0,16:f2}C = {1,6:f2} F", j, convertedValue); //"{0.16:f2}C = {1.6:f2} F"
+                textOut = string.Format("{1,6:f2} F = {0,16:f2}C", j, convertedValue); //"{0,16:f2}C = {1,6:f2} F"
 
                 Console.WriteLine(textOut);
 
@@ -103,17 +103,17 @@ namespace Assignment2
             Console.WriteLine();
         } //f to c
 
-        public double CelciusToFarenheit(double celcius)
+    public double CelciusToFarenheit(double celcius)
         {
-            double farenheit =(9.0/5.0)*celcius+32.0;
+            double farenheit =(9.0/5.0)*(celcius+32.0);
             return farenheit;
         }//double c to f
 
     public double FarenheitToCelcius(double farenheit)
         {
-           double celcius = (5.0 / 9.0) * (farenheit - 32.0);
+           double celcius = (5.0/9.0) * (farenheit - 32.0);
            return celcius;
-        }//double c to f
+        }//double f to c
 
         
 
