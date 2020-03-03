@@ -16,7 +16,7 @@ namespace Assignment2
             do
             {
                 DisplayMenu();
-                choice = Input.ReadIntegerConsole("Your choice:  ");
+                choice = Input.ReadIntegerConsole("Confirm your choice:  ");
                 switch (choice)
                 {
                     case 1:
@@ -45,7 +45,7 @@ namespace Assignment2
             Console.WriteLine("Convert Celcius to Farenheit: 2");
             Console.WriteLine("Exit the converter: 0");
             Console.WriteLine("************************************************************");
-            //Console.WriteLine("Please select: ");
+            Console.WriteLine("Please select: ");
 
 
 
@@ -83,7 +83,7 @@ namespace Assignment2
 
         public void CalculateFarenheitToCelcius()
         {
-            double convertedValue = 0;
+            double convertedValueF = 0;
             string textOut = string.Empty;
 
 
@@ -92,15 +92,16 @@ namespace Assignment2
             for (int j = 0; j <= 212; j += 5)  //j between 0 and 212, increase in increments of 5
 
             {
-                convertedValue = FarenheitToCelcius(j);
+                convertedValueF = FarenheitToCelcius(j);
 
-                textOut = string.Format("{1,6:f2} F = {0,16:f2}C", j, convertedValue); //"{0,16:f2}C = {1,6:f2} F"
+                textOut = string.Format("{1,6:f2} F = {0,16:f2}C", j, convertedValueF); //"{0,16:f2}C = {1,6:f2} F"
 
                 Console.WriteLine(textOut);
 
             }//for
             Console.WriteLine(textOut);
-            Console.WriteLine();
+           
+            Console.WriteLine("************************************************************");
         } //f to c
 
     public double CelciusToFarenheit(double celcius)
