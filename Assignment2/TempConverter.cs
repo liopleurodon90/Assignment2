@@ -57,11 +57,7 @@ namespace Assignment2
             //send people to the appropriate page
         }//displaymenu
 
-        public void CalculateFarenheitToCelcius()
-        {
-            Console.WriteLine("Converting Farenheit to Celcius");
-
-        }//f to c
+        
 
         public void CalculateCelciusToFarenheit()
         {
@@ -85,7 +81,29 @@ namespace Assignment2
             Console.WriteLine( );
         } //c to f
 
-    public double CelciusToFarenheit(double celcius)
+        public void CalculateFarenheitToCelcius()
+        {
+            double convertedValue = 0;
+            string textOut = string.Empty;
+
+
+            Console.WriteLine("Converting Farenheit to Celcius");
+
+            for (int i = 0; i <= 100; i += 5)  //i between 0 and 100, increase in increments of 5
+
+            {
+                convertedValue = CelciusToFarenheit(i);
+
+                textOut = string.Format("{0, 16:f2}C = {1, 6:f2} F", i, convertedValue); //"{0.16:f2}C = {1.6:f2} F"
+
+                Console.WriteLine(textOut);
+
+            }//for
+            Console.WriteLine(textOut);
+            Console.WriteLine();
+        } //f to c
+
+        public double CelciusToFarenheit(double celcius)
         {
             double farenheit =(9.0/5.0)*celcius+32.0;
             return farenheit;
