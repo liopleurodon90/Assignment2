@@ -52,25 +52,54 @@ namespace Assignment2
             string choiceSt = Console.ReadLine();
             //int choice = Convert.ToInt16(choiceSt);
             //int choice = int.Parse(choiceSt);    //parse from string to int
-            Console.WriteLine("Your selection: " + choiceSt + " ");
+            Console.WriteLine("Your selection: " + choiceSt + " "); //inform user 
 
             //send people to the appropriate page
         }//displaymenu
 
         public void CalculateFarenheitToCelcius()
         {
-            Console.WriteLine("Convert Farenheit to Celcius");
+            Console.WriteLine("Converting Farenheit to Celcius");
+
         }//f to c
 
         public void CalculateCelciusToFarenheit()
         {
+            double convertedValue = 0;
+            string textOut = string.Empty;
+           
+
             Console.WriteLine("Convert Celcius to Farenheit");
+
+            for (int i = 0, i<= 100, i += 5); //i between 0 and 100, increase in increments of 5
+                {
+                convertedValue = CelciusToFarenheit(int);
+                
+                textOut = string.Format("{0.16:f2}C = {1.6:f2} F", i, convertedValue);
+
+                Console.WriteLine(textOut);
+
+                }//for
+
+            Console.WriteLine( );
         } //c to f
+
+    public double CelciusToFarenheit(double celcius)
+        {
+            double farenheit =(9.0/5.0)*celcius+32.0;
+            return farenheit;
+        }//double c to f
+
+    public double FarenheitToCelcius(double farenheit)
+        {
+           double celcius = (5.0 / 9.0) * (farenheit - 32.0);
+           return celcius;
+        }//double c to f
 
         //method farenheit to celcius
         //method celcius to farenheit
         //display for each
-        //maybe these are classes
+        //they're defeintely methods
         //maybe the display goes in main
 
     }//class tempconverter
