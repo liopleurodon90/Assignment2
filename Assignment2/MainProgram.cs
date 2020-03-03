@@ -17,7 +17,7 @@ namespace Assignment2
 
             TempCon tempcObj = new TempCon(); //call an object of class TemperatureConverter
             tempcObj.Start();
-           //how do choices work: if choice==1 run method?
+           //all options are within tempcon so it's the only thing necessary here
 
         }//main
     }//mainprogram
