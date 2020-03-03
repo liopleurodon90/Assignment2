@@ -7,7 +7,7 @@ namespace Assignment2
 {
    
 
-    public class TempCon
+     class TempCon
 
     {
         public void Start()
@@ -72,7 +72,7 @@ namespace Assignment2
             {
                 convertedValue = CelciusToFarenheit(i);
 
-                textOut = string.Format("{1, 6:f2} C = {0, 16:f2} F", i, convertedValue); //{0, 16:f2}C = {1, 6:f2} F
+                textOut = string.Format("{0, 6:f2} C = {1, 16:f2} F", i, convertedValue); //{0, 16:f2}C = {1, 6:f2} F
 
                 Console.WriteLine(textOut);
 
