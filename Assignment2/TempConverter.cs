@@ -72,7 +72,7 @@ namespace Assignment2
             {
                 convertedValue = CelciusToFarenheit(i);
 
-                textOut = string.Format("{0, 16:f2}C = {1, 6:f2} F", i, convertedValue); 
+                textOut = string.Format("{1, 6:f2} C = {0, 16:f2} F", i, convertedValue); //{0, 16:f2}C = {1, 6:f2} F
 
                 Console.WriteLine(textOut);
 
@@ -94,7 +94,7 @@ namespace Assignment2
             {
                 convertedValueF = FarenheitToCelcius(j);
 
-                textOut = string.Format("{1,6:f2} F = {0,16:f2}C", convertedValueF, j); //
+                textOut = string.Format("{1,6:f2} F = {0,16:f2} C", convertedValueF, j); //
 
                 Console.WriteLine(textOut);
 
