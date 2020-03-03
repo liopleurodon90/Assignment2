@@ -94,7 +94,7 @@ namespace Assignment2
             {
                 convertedValueF = FarenheitToCelcius(j);
 
-                textOut = string.Format("{1,6:f2} F = {0,16:f2}C", j, convertedValueF); //"{0,16:f2}C = {1,6:f2} F"
+                textOut = string.Format("{1,6:f2} F = {0,16:f2}C", convertedValueF, j); //
 
                 Console.WriteLine(textOut);
 
@@ -106,7 +106,7 @@ namespace Assignment2
 
     public double CelciusToFarenheit(double celcius)
         {
-            double farenheit =(9.0/5.0)*(celcius+32.0);
+            double farenheit =(9.0/5.0)*celcius+32.0;
             return farenheit;
         }//double c to f
 
